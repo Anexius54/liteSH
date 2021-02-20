@@ -1,0 +1,10 @@
+os: linux
+language: cpp
+script:
+  - make
+  - cd lib
+  - make
+
+compiler: g++
+
+dist: xenial
