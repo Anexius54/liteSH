@@ -108,8 +108,6 @@ int main(int argc, char * argv[])
                 f_exit = true;
             break;
         }
-
-        mainMenu();
     }
 
     dlclose(handle);
