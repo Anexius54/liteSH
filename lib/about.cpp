@@ -11,7 +11,7 @@ extern "C" {
         "Using this utility you can easily create processes and daemons,\n" << 
         "receive signals from external programs and the operating system\n" << 
         "and also send signals to other processes\n" << 
-        "Author: Evgeniy Sapronov" << endl;
+        "Author: Evgeniy Sapronov" << endl << endl;
 
         ifstream signals("../bin/signals.txt");
         string SigName;
@@ -31,7 +31,7 @@ extern "C" {
 
     void mainMenu()
     {
-        cout << "Print 'createProcess' to create process\n" <<
+        cout << "\nPrint 'createProcess' to create process\n" <<
         "Print 'createDaemon' to create daemon\n" <<
         "Print 'sendSignal' to send signal to the process\n" <<
         "Print 'recvSignal' to receive signal\n" << 

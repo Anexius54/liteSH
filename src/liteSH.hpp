@@ -26,3 +26,4 @@ int recvSignal(int signum);
 
 int netWork_client(char * command);
 void netWork_server();
+void closeServer();

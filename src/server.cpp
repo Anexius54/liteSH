@@ -44,6 +44,7 @@ void netWork_server()
             } else if (strcmp(buf, "exit") == 0) {
                 strcpy(buf, "7");
                 send(newsock, buf, sizeof(buf), 0);
+                closeServer();
             } else {
                 strcpy(buf, "unknown command");
                 send(newsock, buf, sizeof(buf), 0);
@@ -53,6 +54,11 @@ void netWork_server()
     }
 
     close(sock);
+}
+
+void closeServer()
+{
+    exit(0);
 }
 
 
