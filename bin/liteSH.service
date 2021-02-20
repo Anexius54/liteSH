@@ -1,0 +1,17 @@
+[Unit]
+Description=liteSH_daemon
+
+
+[Service]
+Type=simple
+User=root
+Group=root
+ExecStart=/home/evn/study/OS/liteSH/bin/liteSH -silent
+ExecReload=/home/evn/study/OS/liteSH/bin/liteSH -silent
+TimeoutStartSec=120
+KillMode=control-group
+OOMScoreAdjust=-1000
+
+
+[Install]
+WantedBy=multi-user.target
