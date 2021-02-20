@@ -28,13 +28,13 @@ int main(int argc, char * argv[])
         return 1;
     }
 
+    mainMenu();
 
     bool f_exit = false;
 
     while (f_exit == false)
     {
-        mainMenu();
-        
+
         int selection = 0;
         char *command = new char[100];
 
@@ -108,6 +108,8 @@ int main(int argc, char * argv[])
                 f_exit = true;
             break;
         }
+
+        mainMenu();
     }
 
     dlclose(handle);
